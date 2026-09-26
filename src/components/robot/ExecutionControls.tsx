@@ -1,0 +1,2 @@
+import{Button}from'../common/Button';
+export function ExecutionControls({running,onRun,onStop,onReset}:{running:boolean;onRun:()=>void;onStop:()=>void;onReset:()=>void}){return <div className="execution-controls">{running?<Button onClick={onStop} variant="secondary">■ Stop</Button>:<Button onClick={onRun}>▶ Run program</Button>}<Button onClick={onReset} variant="quiet" disabled={running}>Reset</Button><span>{running?'EXECUTING…':'READY'}</span></div>}

@@ -1,0 +1,2 @@
+import{robotDocs}from'../../data/robotDocs';
+export function RobotDocs(){return <aside className="robot-docs"><div className="docs-header"><span>REFERENCE MANUAL</span><h2>ROBOT OS <b>v1.0</b></h2><p>Commands are case-insensitive. Every command ends with a semicolon.</p></div>{robotDocs.map(section=><section key={section.title}><h3>{section.title}</h3>{section.items.map(([code,desc])=><div className="doc-item" key={code}><code>{code}</code><p>{desc}</p></div>)}</section>)}</aside>}

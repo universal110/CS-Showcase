@@ -1,0 +1,1 @@
+export function ExecutionConsole({title,message,tone}:{title:string;message:string;tone:'neutral'|'error'|'success'|'almost'}){return <div className={`execution-console console--${tone}`} role="status" aria-live="polite"><span className="terminal-prompt">›</span><div><strong>{title}</strong><p>{message}</p></div><i className="terminal-cursor" aria-hidden="true"/></div>}

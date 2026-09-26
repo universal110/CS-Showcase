@@ -1,0 +1,1 @@
+export function BackButton({onClick}:{onClick:()=>void}){return <button className="back-button" onClick={onClick} aria-label="Back to challenges"><span aria-hidden="true">←</span> Challenges</button>}

@@ -1,0 +1,1 @@
+export function CipherDisplay({text}:{text:string}){return <div className="cipher-display"><span>ENCRYPTED MESSAGE</span><code>{text}</code><div className="recovered"><small>RECOVERED CLUE</small><strong>U <i>→</i> R</strong></div></div>}
